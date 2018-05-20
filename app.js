@@ -19,9 +19,6 @@ app.use(methodOverride('_method'));
 app.use(cookieParser());
 app.use(express.static('public'));
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
@@ -31,8 +28,8 @@ app.get('/', (req, res) => {
   res.send('hello we are deployed');
 });
 
-// const triviaapiRoutes = require('./routes/triviaapiRoutes');
-// app.use('/trivia', triviaapiRoutes);
+const weddingRoutes = require('./routes/weddingRoutes');
+app.use('/wedding', weddingRoutes);
 
 // const gameRoutes = require('./routes/game-routes');
 // app.use('/game', gameRoutes);
