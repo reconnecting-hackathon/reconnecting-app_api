@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const passport = require('passport');
-const htmlEntity = require('html-entities');
 
 const app = express();
 require('dotenv').config();
