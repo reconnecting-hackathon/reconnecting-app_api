@@ -1,5 +1,5 @@
 {
-  "name": "trivia",
+  "name": "just_us_api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.generalassemb.ly/Jdip88/trivia.git"
+    "url": "https://github.com/jdiperi88/just_us_api.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +19,7 @@
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
-    "express": "^4.15.3",
+    "express": "^4.16.3",
     "html-entities": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
     "method-override": "^2.3.9",
