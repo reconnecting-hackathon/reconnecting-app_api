@@ -7,8 +7,8 @@ Wedding.getAll= (req, res) => {
   weddingModel.getImages()
     .then(data => {
       console.log(data)
-      res.send('sucess', {
-        data: data,
+      res.send({
+        data
       })
     })
     .catch(err => {

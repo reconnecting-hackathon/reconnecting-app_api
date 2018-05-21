@@ -4,7 +4,7 @@ const wedding = {};
 
 wedding.getImages = () => {
   return db.query(`
-    SELECT * FROM images
+    SELECT * FROM people;
   `);
 };
 
