@@ -12,7 +12,8 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "debugger": "DEBUG=*:* npm run dev",
-    "heroku-postbuild": "npm install --production"
+    "heroku-postbuild": "npm install --production",
+    "postdeploy": "psql $DATABASE_URL cd db/migrations -f migration.sql"
   },
   "repository": {
     "type": "git",
