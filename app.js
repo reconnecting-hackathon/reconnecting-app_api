@@ -30,3 +30,5 @@ app.use('/wedding', weddingRoutes);
 
 // const gameRoutes = require('./routes/game-routes');
 // app.use('/game', gameRoutes);
+
+module.exports = app;
