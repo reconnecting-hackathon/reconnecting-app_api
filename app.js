@@ -6,7 +6,6 @@ const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 
 const app = express();
-require('dotenv').config();
 
 //middleware 
 app.use(logger('dev'));
