@@ -12,7 +12,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "debugger": "DEBUG=*:* npm run dev",
-    "heroku-postbuild": "npm install --production",
+    "heroku-postbuild": "npm install --production"
   },
   "repository": {
     "type": "git",
