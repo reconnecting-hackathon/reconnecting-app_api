@@ -7,13 +7,16 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
-//middleware 
+//middleware
+app.use(cors({origin: '*'})) 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 app.use(cookieParser());
 app.use(express.static('public'));
+// load all env variables from .env file into process.env object.
+require('dotenv').config()
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
