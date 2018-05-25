@@ -19,7 +19,7 @@ Wedding.getAll= (req, res) => {
 
 Wedding.getPersonsPictures = (req, res) => {
   console.log(req.params.name);
-  weddingModel.getSelectedPersonsPictures({
+  weddingModel.getSelectedPictures({
     person: req.params.name
   })
     .then(data => {

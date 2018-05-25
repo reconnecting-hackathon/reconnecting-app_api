@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS image_person_join
 (
   id SERIAL PRIMARY KEY,
   people_id INT REFERENCES people(id) NOT NULL,
-  image_id INT REFERENCES images(id) NOT NULL  
+  image_id INT REFERENCES images(id) NOT NULL 
 );
 
 

@@ -1,3 +1,3 @@
+\c
 INSERT INTO people(person_name)
--- VALUES ('Joey'),('Saida');
-VALUES ('MJ'),('Pam')('Oswaldo');
+VALUES ('Joey'),('Saida'),('MJ'),('Pam'),('Oswaldo');
