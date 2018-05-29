@@ -157,7 +157,7 @@ VALUES
 ('Kryssy_Central_Park_1.jpg', 'Central Park'),
 ('Kryssy_Central_PArk_2.jpg', 'Central Park'),
 ('MJ_Pam_Boat.jpg', 'boat'),
-('Ziyoda_Central_Park', 'Central Park'),
+('Ziyoda_Central_Park.jpg', 'Central Park'),
 ('Joey_Saida_Central_Park_11.jpg', 'Central Park'),
 ('Joey_Saida_Central_Park_12.jpg', 'Central Park'),
 ('Saida_Central Park_1.jpg', 'Central Park'),
@@ -252,7 +252,7 @@ VALUES
 ('joey_ziyoda_kryssy_boat2.jpg', 'boat'),
 ('john_boat1.jpg', 'boat'),
 ('kenny_kryssy_boat2.jpg', 'boat'),
-('kryssy_boat1', 'boat'),
+('kryssy_boat1.jpg', 'boat'),
 ('kryssy_kenny_boat1.jpg', 'boat'),
 ('mj_boat1.jpg', 'boat'),
 ('mj_john_boat1.jpg', 'boat'),
@@ -287,6 +287,7 @@ VALUES
 ('ziyoda_boat1.jpg', 'boat'),
 ('ziyoda_boat2.jpg', 'boat');
 
-UPDATE images
-SET image_name = 'Joey_Saida_City_Hall_8.jpg'
-WHERE id = 30;
+UPDATE image_person_join
+SET peopp = 'Onajon_Boat_1.jpg'
+WHERE image_id = 113;
+

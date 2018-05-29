@@ -20,7 +20,7 @@ VALUES
 ('Tyrone'),
 ('Allison'),
 ('Princie'),
-('Danielle'),
+('Daniella'),
 ('Scott'),
 ('Bailey'),
 ('Raj');
