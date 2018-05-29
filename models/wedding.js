@@ -15,8 +15,8 @@ wedding.getSelectedPictures = (o) => {
     SELECT * FROM image_person_join i
     join people p on p.id = i.people_id
     join images im on im.id=i.image_id
-    where p.person_name = ?
-  `,[o.pereson]);
+    where p.person_name = $1
+  `,[o.person]);
 };
 
 // wedding.create = (wedding) => {
