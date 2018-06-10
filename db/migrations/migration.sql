@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS images
   id SERIAL PRIMARY KEY,
   image_name VARCHAR(255) NOT NULL,
   location_name VARCHAR(255) NOT NULL,
-  descriptions TEXT
+  descriptions TEXT,
+  featured_image boolean,
+  vertical boolean
 );
 
 CREATE TABLE IF NOT EXISTS people

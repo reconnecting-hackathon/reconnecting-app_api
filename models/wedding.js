@@ -4,9 +4,8 @@ const wedding = {};
 
 wedding.getImages = () => {
   return db.query(`
-    SELECT * FROM image_person_join i
-    join people on people.id = i.people_id
-    join images im on im.id=i.image_id;
+    SELECT * FROM images
+    where featured_image = true;
   `);
 };
 
