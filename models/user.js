@@ -7,7 +7,9 @@ user.getUser = (email, password_name) => {
     SELECT id
       , first_name
       , last_name
-  `);
+    FROM user
+    WHERE email = $1 AND password_name = $2
+  `, [email, password_name]);
 };
 
 user.updateUser = (userInfo) => {
@@ -25,13 +27,6 @@ user.updateUser = (userInfo) => {
     email,
     password_name,
     id);
-};
-
-user.getUserContacts = (user_id) => {
-  return db.query(`
-    SELECT *
-    FROM contacts
-    WHERE user_id = $1`, user_id);
 };
 
 module.exports = user;
