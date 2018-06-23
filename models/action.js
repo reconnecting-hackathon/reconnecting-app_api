@@ -18,6 +18,6 @@ action.completeAction = (action_id, updated_start_time) => {
   return db.query(`
     UPDATE actions
       SET start_time = $1
-    WHERE action_id = $2
+    WHERE id = $2
   `, [updated_start_time, action_id]);
 }
