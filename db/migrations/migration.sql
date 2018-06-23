@@ -4,8 +4,9 @@ CREATE TABLE IF NOT EXISTS user
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(255),
   last_name VARCHAR(255),
+  image_url VARCHAR(255),
   email VARCHAR(255),
-  password_name VARCHAR(255)
+  password_name VARCHAR(255),
 );
 
 CREATE TABLE IF NOT EXISTS contacts
@@ -13,6 +14,7 @@ CREATE TABLE IF NOT EXISTS contacts
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(255),
   last_name VARCHAR(255),
+  image_url VARCHAR(255),
   email VARCHAR(255),
   phone VARCHAR(255),
   prefered_contact_method VARCHAR(255),
@@ -41,6 +43,3 @@ CREATE TABLE IF NOT EXISTS actions
   start_time date
   contacts_id INT REFERENCES contacts(id)
 );
-
-
-`
