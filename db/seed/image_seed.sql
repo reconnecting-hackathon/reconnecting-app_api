@@ -1,7 +1,6 @@
 INSERT INTO images(image_name,location_name, featured_image, vertical)
 VALUES 
-('fountain_museum_stare.jpg', 'museum','f','f'),
-('cricket_city_hall.jpg', 'city hall','f','f'),
+
 ('Joey_Onajon_Ziyoda_City_Hall_1.jpg', 'city hall','f','t'),
 ('Joey_Onajon_Ziyoda_City_Hall_2.jpg', 'city hall','f','t'),
 ('Joey_Saida_City_Hall_1.jpg', 'city hall','f','t'),
@@ -287,5 +286,6 @@ VALUES
 ('ziyoda_boat1.jpg', 'boat','f','f'),
 ('ziyoda_boat2.jpg', 'boat','f','f');
 
-
+-- ('fountain_museum_stare.jpg', 'museum','f','f'),
+-- ('cricket_city_hall.jpg', 'city hall','f','f'),
 -- Joey_City_Hall_4.jpg, Cricket_City_Hall_1.jpg, Joey_Saida_Museum_1.jpg, Joey_Saida_Museum_13.jpg, Joey_Saida_Museum_14.jpg, Joey_Saida_Museum_15.jpg, Joey_Saida_Museum_16.jpg, Joey_Saida_Museum_17.jpg, Joey_Saida_Museum_18.jpg, Saida_City_Hall.jpg, untitled-215.jpg, untitled-216.jpg, untitled.jpg
