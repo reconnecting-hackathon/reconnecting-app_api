@@ -1,3 +1,4 @@
+create database reconnect;
 
 CREATE TABLE IF NOT EXISTS user
 (

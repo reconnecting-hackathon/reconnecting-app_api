@@ -9,7 +9,7 @@ const DATABASE_URL = 'postgres://zushqswnnzloyw:deaea9162648a7dbd1b285baf3916f9c
 function setDatabase() {
   if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
     return pgp({
-      database: 'wedding',
+      database: 'reconnect',
       port: 5432,
       host: 'localhost',
       user: 'zushqswnnzloyw',
