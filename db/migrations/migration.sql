@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS contacts
   phone VARCHAR(255),
   prefered_contact_method VARCHAR(255),
   frequency VARCHAR(255),
+  user_id INT REFERENCES user(id),
 );
 
 CREATE TABLE IF NOT EXISTS activities
@@ -37,7 +38,7 @@ CREATE TABLE IF NOT EXISTS actions
 (
   id SERIAL PRIMARY KEY,
   action_complete boolean,
-  start_time date 
+  start_time date
   contacts_id INT REFERENCES contacts(id)
 );
 
