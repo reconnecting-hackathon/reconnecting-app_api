@@ -1,7 +1,7 @@
 const express = require('express');
 const Router = express.Router();
 
-const api = require('../controllers/api');
+const api = require('../controllers/ApiController');
 
 
 
