@@ -31,8 +31,8 @@ app.get('/', (req, res) => {
   res.send('hello we are deployed');
 });
 
-const weddingRoutes = require('./routes/weddingRoutes');
-app.use('/wedding', weddingRoutes);
+const api = require('./routes/api');
+app.use('/api', api);
 
 // const gameRoutes = require('./routes/game-routes');
 // app.use('/game', gameRoutes);
