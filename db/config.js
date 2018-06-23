@@ -5,15 +5,15 @@ const options = {
 };
 
 const pgp = require('pg-promise')(options);
-const DATABASE_URL = 'postgres://ijvtkjytuniwbx:bb35cb7bc9650cfad7d580762619ffe87850eacbe1d8ea2a39d350c77d716b35@ec2-23-23-130-158.compute-1.amazonaws.com:5432/desl8omprsf28a'
+const DATABASE_URL = 'postgres://zushqswnnzloyw:deaea9162648a7dbd1b285baf3916f9c743f80fe7e38520f26ef244e0d6a8009@ec2-54-163-229-212.compute-1.amazonaws.com:5432/d5fcfo9rap8tb1'
 function setDatabase() {
   if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
     return pgp({
       database: 'wedding',
       port: 5432,
       host: 'localhost',
-      user: 'joey.diperi',
-      pass: 'matrix8'
+      user: 'zushqswnnzloyw',
+      pass: 'deaea9162648a7dbd1b285baf3916f9c743f80fe7e38520f26ef244e0d6a8009'
     });
   } else if (process.env.NODE_ENV === 'production') {
     return pgp(DATABASE_URL);
